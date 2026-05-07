@@ -76,15 +76,15 @@ test("проверка на создание класса Zombie", () => {
 
 
 test('ошибка если имя короче 2 символов', () => {
-  expect(() => new Character('А', 'Bowerman')).toThrow('Невалидное значение имени');
+  expect(() => new Character('А', 'Bowman')).toThrow('Невалидное значение имени');
 });
 
 test('ошибка если имя длиннее 10 символов', () => {
-  expect(() => new Character('ОченьДлинноеИмя', 'Bowerman')).toThrow('Невалидное значение имени');
+  expect(() => new Character('ОченьДлинноеИмя', 'Bowman')).toThrow('Невалидное значение имени');
 });
 
 test('ошибка если имя не строка', () => {
-  expect(() => new Character(123, 'Bowerman')).toThrow('Невалидное значение имени');
+  expect(() => new Character(123, 'Bowman')).toThrow('Невалидное значение имени');
 });
 
 test('ошибка если невалидный тип', () => {
